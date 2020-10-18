@@ -1,0 +1,8 @@
+<!--pages/joke/joke.wxml-->
+<view class = "joke" wx:for="{{jokeList}}">
+  <view>笑话</view>
+  <view>
+    <text class = "qwe">{{item.content}}</text>
+  </view>
+  <view>{{item.updatetime}}</view>
+</view>

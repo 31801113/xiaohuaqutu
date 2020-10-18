@@ -1,0 +1,8 @@
+<!--pages/picture/picture.wxml-->
+<view class = "joke" wx:for="{{jokeList}}">
+  <view>趣图</view>
+  <view>
+    <image class = "abc" src = "{{item.url}}"></image>
+  </view>
+  <view>{{item.updatetime}}</view>
+</view>

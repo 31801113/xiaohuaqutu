@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/joke/joke",
+    "pages/picture/picture",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#268dcd",
+    "navigationBarTitleText": "笑话趣图",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#268dcd",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "笑话",
+        "pagePath": "pages/joke/joke",
+        "iconPath": "image/_smile_gray.png",
+        "selectedIconPath": "image/_smile.png"
+      },
+      {
+        "text": "趣图",
+        "pagePath": "pages/picture/picture",
+        "iconPath": "image/_picture_gray.png",
+        "selectedIconPath": "image/_picture.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap61.json"
+}

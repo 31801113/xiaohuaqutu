@@ -10,7 +10,7 @@
     "navigationBarTitleText": "笑话趣图",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true,
-    "backgroundTextStyle": "light"
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
     "color": "#000000",

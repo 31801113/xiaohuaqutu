@@ -3,6 +3,9 @@
   <view>笑话</view>
   <view>
     <text class = "qwe">{{item.content}}</text>
+    <view wx:if="{{scrollTop>minscreenHeight}}" class="goTop" bindtap="goTop">
+      <text>返回\n顶部</text>  
+</view>
   </view>
   <view>{{item.updatetime}}</view>
 </view>

@@ -1,4 +1,5 @@
 // pages/joke/joke.js
+const app = getApp();
 Page({
 
   /**
@@ -10,7 +11,9 @@ Page({
       {content: '',updatetime:'2018-8-8',url:''},
       {content: '',updatetime:'2018-8-8',url:''}
     ],
-    page:1
+    page:1,
+    minscreenHeight: app.data.minscreenHeight,
+    scrollTop: 0,
   },
 
   /**
@@ -82,5 +85,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onPageScroll: function(e){
+    this.setData({
+      scrollTop: e.scrollTop
+    })
+  },
+  goTop:function(){
+    app.goTop()
   }
-})
+  })

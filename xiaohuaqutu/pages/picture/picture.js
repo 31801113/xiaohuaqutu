@@ -1,4 +1,5 @@
 // pages/picture/picture.js
+const app = getApp();
 Page({
 
   /**
@@ -10,7 +11,9 @@ Page({
       {content: '笑话1',updatetime:'2018-8-8',url:''},
       {content: '笑话1',updatetime:'2018-8-8',url:''}
     ],
-    page:1
+    page:1,
+    minscreenHeight: app.data.minscreenHeight,
+    scrollTop: 0,
   },
 
   /**
@@ -28,15 +31,6 @@ Page({
         });
       }
     })
-    var that = this; 
-   wx.getSystemInfo({ 
-     success:function(res){ 
-       console.info(res.windowHeight); 
-       that.setData({ 
-         scrollHeight:res.windowHeight 
-       }); 
-     } 
-   }); 
   },
 
   /**
@@ -92,5 +86,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onPageScroll: function(e){
+    this.setData({
+      scrollTop: e.scrollTop
+    })
+  },
+  goTop:function(){
+    app.goTop()
   }
 })

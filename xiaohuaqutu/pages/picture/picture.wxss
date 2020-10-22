@@ -2,3 +2,4 @@
 .abc{
   width: 660rpx;
 }
+.goTop{width:68rpx;height:68rpx; position: fixed;bottom:30rpx; right:26rpx; z-index:4;border-radius: 50%; background: #ccc;color:#fff; font-size: 20rpx; display: flex; align-items: center;justify-content: center; }

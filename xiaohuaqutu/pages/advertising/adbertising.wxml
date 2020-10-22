@@ -1,0 +1,10 @@
+<!--pages/advertising/advertising.wxml-->
+<view class='main'>
+<view class='adv1'>
+  <image src='/image/smile.png' class='adv-img'></image>
+  <text class='tiaoguo' bindtap='cliadv'>跳过广告 {{miao}}</text>
+</view>
+<view>
+  <text class='text2'>欢迎来到\n笑话趣图</text>
+</view>
+</view>

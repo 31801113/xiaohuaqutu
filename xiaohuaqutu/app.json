@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/advertising/adbertising",
     "pages/joke/joke",
     "pages/picture/picture",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
